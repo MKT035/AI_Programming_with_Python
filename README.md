@@ -10,12 +10,10 @@ The first project dealt with using a given image classifier in order to identify
 
 ## Own Image Classifier to predict Flowers
 
-### Training
-1. Checkout this repository and navigate into `image_classifier_flowers/ImageClassifier`
-2. Run `python train.py <data_directory>` (the script is written in such a way that the user is informed about all the steps taken (building the network, training, ...))
-3. To see all the possible customizations, run `python train.py --h`
+The second project dealt with building an image classifier almost from scratch. Only the very basic foundation of the code was given (i.e. some helper functions and tips). The goal of the project was to implement the above described functionality in a Jupyter Notebook. The second goal was to build a command line application allowing the user to:
 
-### Predicting
-1. Checkout this repository and navigate into `image_classifier_flowers/ImageClassifier`
-2. Run `python predict.py <path_to_image> <checkpoint>` (note that a valid checkpoint needs to be given)
-3. To see all the possible customizations, run `python predict.py --h`
+- choose different network architectures (vgg13, vgg16, alexnet)
+- customize the hyperparameters (epochs, learning_rate, hidden units)
+- use a GPU for training (if available)
+- save and load the model
+- use the model to make predictions
